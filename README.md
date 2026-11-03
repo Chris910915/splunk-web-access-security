@@ -57,7 +57,7 @@
 3. **Repeated Login Failures**：顯示來源 IP、失敗次數與目標路徑。
 4. **Suspicious Path Probing**：顯示來源 IP、探測數、路徑與回應碼。
 
-建議將儀表板總覽與各分析面板截圖放入 [`screenshots/`](screenshots/)。截圖中避免保留個人帳號或其他本機資訊。
+儀表板已匯出為兩頁 PDF，包含狀態碼分布、錯誤率與兩項異常分析：[開啟儀表板報告 PDF](screenshots/dashboard-overview.pdf)。`screenshots/` 另保留資料匯入、欄位擷取與各項查詢結果的 PNG 紀錄。
 
 ## 專案結構
 
@@ -67,7 +67,9 @@ splunk-web-access-security/
 ├── data/
 │   └── access.log
 ├── screenshots/
-│   └── README.md
+│   ├── README.md
+│   ├── dashboard-overview.pdf
+│   └── 01–07 分析與操作截圖（PNG）
 └── spl/
     ├── 01_field_validation.spl
     ├── 02_http_error_rate.spl

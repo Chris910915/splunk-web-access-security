@@ -1,6 +1,6 @@
-# Project screenshots
+# Project evidence
 
-Screenshots captured during the guided Splunk exercise:
+The dashboard is presented as a two-page PDF, with selected PNG screenshots retained as supporting evidence:
 
 - `01-source-log.png` — synthetic Apache access log.
 - `02-ingestion-19-events.png` — Splunk search confirming 19 events.
@@ -9,6 +9,6 @@ Screenshots captured during the guided Splunk exercise:
 - `05-status-distribution.png` — HTTP status code bar chart.
 - `06-repeated-login-failures.png` — source IP, 3 failures, `/login`.
 - `07-suspicious-path-probing.png` — source IP, four paths, response codes.
-- `08-dashboard-overview-top.png` and `09-dashboard-overview-bottom.png` — dashboard panels across two screen captures.
+- `dashboard-overview.pdf` — exported dashboard with the status distribution, error rate, repeated login failures, and suspicious path probing panels.
 
 Review images before publishing and crop out browser tabs or unrelated personal information if needed.
