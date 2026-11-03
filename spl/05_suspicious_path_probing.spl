@@ -1,0 +1,10 @@
+index=main sourcetype=access_combined
+| where like(uri, "%admin%")
+    OR like(uri, "%passwd%")
+    OR like(uri, "%.env%")
+    OR like(uri, "%../%")
+| stats count as probe_requests
+        values(uri) as probed_paths
+        values(status) as response_codes
+  by clientip
+| sort 0 - probe_requests

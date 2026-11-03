@@ -1,0 +1,4 @@
+index=main sourcetype=access_combined
+| eval is_error=if(tonumber(status)>=400, 1, 0)
+| stats count as total_events sum(is_error) as error_events
+| eval error_rate_pct=round(error_events/total_events*100, 2)

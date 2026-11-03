@@ -1,0 +1,3 @@
+index=main sourcetype=access_combined
+| stats count as requests by status
+| sort 0 + status

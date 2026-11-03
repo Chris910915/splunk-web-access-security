@@ -1,0 +1,4 @@
+index=main sourcetype=access_combined status=401
+| stats count as failed_logins values(uri) as targeted_paths by clientip
+| where failed_logins >= 3
+| sort 0 - failed_logins
